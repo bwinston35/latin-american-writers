@@ -4,12 +4,12 @@ This data comes from the [Archives of Latin American Writers and Intellectuals i
 The extraction of the data from this list occurred March 25, 2024. There is a chance that the guide has been updated since this data was extracted.
 
 # Transformation of data
-The dataset was transformed with the tool OpenRefine and by leveraging its reconcilliation method to access the Wikidata API. It's primary purpose is for instructional purposes in workshops and iterative project design. Therefore some of the transformation choices made to develop a useable dataset has excluded some of the original information contained in the above mentioned LibGuide.
+The dataset was transformed with the tool OpenRefine and by leveraging its reconciliation method to access the Wikidata API. It's primary purpose is for instructional purposes in workshops and iterative project design. Therefore some of the transformation choices made to develop a useable dataset has excluded some of the original information contained in the above mentioned LibGuide.
 
 Below is a sketch of the changes made to the original list as well as the information added to prepare this dataset for mapping and other visualizations.
 
 ## Edits and removals
-- An author column was addedd so taht author names could be extracted from collection lists.
+- An author column was added so that author names could be extracted from collection lists.
 - An organizer column was added to represent other names listed in a collection title. This column was determined by additional wording in collection such as Joe Smith’s correspondence with Latin American Writers. If unclear but papers include Spanish surname that defaulted to author rather than organizer.
 - If a collection had more than one author listed in its title, a new row was added and the collection title was duplicated in relation to an additional author.
 - If an author appears more than once throughout the list, only one mention is retained. Therefore the dataset only represents unique mentions of an author. The primary purpose of this dataset is represent demographic information about authors and intellectuals within Princeton collections.
@@ -28,9 +28,19 @@ Information was added to the dataset with the assistance of the OpenRefine recon
 - sex or gender
 - spouse
 
-Not every corresponding author entry on Wikidata included all of the above additional information, so if it was not easily findable, that cell was left blank in the dataset.
+Not every corresponding author entry on Wikidata included all of the above additional information, so if it was not easily findable, it may have been left blank. Additional research has produced more data that has been included in a later update (see below).
 
 # Current state of dataset
+## 2025-01-14 update: 
+Some information has been added manually, which includes:
+
+- Adding 'alive' to place of death column if other is still living at time of update.
+- Adding 'unknown' if status of author cannot be confirmed.
+- Locations of birth and death through additional research.
+
+The updated dataset no longer contains Wolfgang A. Luchting.
+
+## 2024-04-15 update: 
 The transformed dataset remains in the state listed above. I have also created simplified spreadsheets with some of the information above to produce maps and other visualizations that are part of a ArcGIS StoryMaps project.
 
-_last updated 2015-04-15_
+_last updated 2025-01-14_
