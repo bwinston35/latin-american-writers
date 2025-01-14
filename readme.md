@@ -32,13 +32,14 @@ Not every corresponding author entry on Wikidata included all of the above addit
 
 # Current state of dataset
 ## 2025-01-14 update: 
-Some information has been added manually, which includes:
+Some information has been added manually to the main dataset (writers_matched_no_duplicates), which includes:
 
 - Adding 'alive' to place of death column if other is still living at time of update.
 - Adding 'unknown' if status of author cannot be confirmed.
 - Locations of birth and death through additional research.
 
 The updated dataset no longer contains Wolfgang A. Luchting.
+The places_of_death.csv no longer contains authors who are alive or who's living status is unknown.
 
 ## 2024-04-15 update: 
 The transformed dataset remains in the state listed above. I have also created simplified spreadsheets with some of the information above to produce maps and other visualizations that are part of a ArcGIS StoryMaps project.
